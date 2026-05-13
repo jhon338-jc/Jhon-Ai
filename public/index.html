@@ -726,7 +726,8 @@
             const signal = currentAbortController.signal;
 
             try {
-const response = await fetch('/api/chat', { method: 'POST', body: formData, signal: signal });                const data = await response.json();
+                 const response = await fetch('/chat', { method: 'POST', body: formData, signal: signal });           
+                 const data = await response.json();
         
                 divLoading.remove();
                 
