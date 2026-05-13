@@ -38,10 +38,9 @@
 <body>
 
     <script>
-        // Cek apakah ada tiket masuk VIP dari index.html
         if (sessionStorage.getItem("kunciAdmin") !== "bos_jhon_asli") {
             alert("🛑 PELANGGARAN TERDETEKSI! Akses Ilegal!\nLu bakal ditendang ke halaman utama!");
-            window.location.replace("/"); // Tendang paksa ke index.html
+            window.location.replace("/"); 
         }
     </script>
 
@@ -57,7 +56,6 @@
 
     <script>
         function keluarAdmin() {
-            // Hapus tiket masuk VIP
             sessionStorage.removeItem("kunciAdmin");
             alert("Meninggalkan Ruang Komando...");
             window.location.replace("/");
