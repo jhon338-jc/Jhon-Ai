@@ -314,27 +314,6 @@
         </div>
     </div>
 
-<div style="text-align: center; margin-bottom: 20px;">
-  <button onclick="bukaGerbangAdmin()" style="background-color: #ff3333; color: white; font-weight: bold; padding: 10px 20px; border-radius: 5px; cursor: pointer; border: none; box-shadow: 0px 0px 10px red;">
-    👑 Masuk Mode Admin
-  </button>
-</div>
-
-<script>
-  function bukaGerbangAdmin() {
-    const pinRahasia = "338338"; // <-- Ganti PIN lu di sini nanti
-    let inputPin = prompt("🚨 RUANG KOMANDO RAHASIA 🚨\nMasukkan PIN Admin Bos:");
-    
-    if (inputPin === pinRahasia) {
-      alert("Akses Diterima! Selamat datang Bos JHON338.");
-      sessionStorage.setItem("kunciAdmin", "bos_jhon_asli");
-      window.location.href = "/admin.html"; 
-    } else if (inputPin !== null) {
-      alert("PIN SALAH! Lu siapa woy berani masuk?!");
-    }
-  }
-</script>
-
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
         import { getAuth, GoogleAuthProvider, signInWithPopup, onAuthStateChanged, signOut, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-auth.js";
