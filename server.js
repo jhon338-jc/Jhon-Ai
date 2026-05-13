@@ -51,7 +51,7 @@ KEMAMPUAN SUPER JHON AI (KHUSUSNYA PROGRAMMING TINGKAT LANJUT):
 `;
 
 // Rute utama buat nerima chat & analisis file
-app.post('/api/chat', upload.single('file'), async (req, res) => {
+app.post('/chat', upload.single('file'), async (req, res) => {
     try {
         const pesanUser = req.body.pesan || "";
         
